@@ -1,5 +1,5 @@
 
-// ...........1.........//
+// ........Problem ---> 1.........//
 
 
 function mindGame(input)
@@ -23,9 +23,7 @@ return forth ;
 }
 
 
-
-
-//...............2............//
+//............Problem ---> 2............//
 
 
 
@@ -36,21 +34,27 @@ function evenOdd(text)
 
   //this checks if the input is a string or not,if not it returns an error message
 
+
+
+if(typeof(text)!="string") {
+return "error" ;}
+
 let  number=text.length;
 
-if(typeof(text)!="text") {
-return error ;}
+if(number%2==0) { //checks if the number is divibled by 0 or not if 0 returns even...
 
-if(number%2==0) { //checks if the number is divibled by 0 or not if 0 returns even...//
+return "even";
+}
 
-return 'even';}
 else {
-return 'odd';
+return "odd";
 }
 }
 
 
-// ...............3...............//
+
+
+// ............Problem ---> 3...............//
 
 
 function isLGSeven(number)
@@ -78,7 +82,8 @@ return number*2;
 
 
 
-// .............4..............//
+
+// ........Problem ----> 4..............//
 
 function findingBadData(array)
 {
@@ -108,7 +113,10 @@ return data;   //return the  bad  data amount....//
 
 
 
-// ................5..................//
+
+// .............Problem ----> 5..................//
+
+
 
 function gemsToDiamond(gems1,gems2,gems3)
 
@@ -142,5 +150,4 @@ else if(Total>1000*2)
 return Total-2000;
 
 }
-
 
